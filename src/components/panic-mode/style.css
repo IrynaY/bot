@@ -1,0 +1,31 @@
+.panic-title {
+  font-size: 44px;
+  animation: color-change 1s infinite;
+  font-weight: bold;
+}
+
+.panic-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: background-color-change 1s infinite;
+}
+
+.panic-wrapper{
+    background-color: white;
+    padding: 25px;
+}
+
+@keyframes background-color-change {
+    0% { background-color: rgba(255, 0, 0, 0.783); }
+    50% { background-color: rgba(0, 30, 255, 0.783); }
+    100% { background-color: rgba(255, 0, 0, 0.783); }
+}
+
+@keyframes color-change {
+    0% { color: rgba(0, 30, 255, 0.783); }
+    50% { color: rgba(255, 0, 0, 0.783); }
+    100% { color: rgba(0, 30, 255, 0.783); }
+}

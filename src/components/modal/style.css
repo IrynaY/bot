@@ -1,0 +1,24 @@
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 25px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 12px;
+  }
+
+  .modal-window {
+    padding: 3px;
+  }
+}
